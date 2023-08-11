@@ -1,0 +1,36 @@
+#key value pairs
+"apple" : "i am a red ball"
+5 : "this is my number"
+---
+#lists
+- apple
+- mango
+- banana
+- pine apple
+- Apple
+---
+cities:
+  - kolkata
+  - murshidabad
+  - krishna nagar
+  - siliguri
+---
+cities: [kolkata, murshidabad, siliguri]
+---
+#string variables
+myself: Aniket Ghosh
+fruit: "apple"
+job: 'dev'
+#write multiple lines
+bio: |
+hey i am aniket.
+i am a student.
+
+#write a single line in multiple lines
+message: >
+this will 
+all be 
+in one sigle line
+
+...
+
