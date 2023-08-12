@@ -1,0 +1,7 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+#or like this
+student: [marks, name, roll_no]
+
