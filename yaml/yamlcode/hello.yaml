@@ -36,5 +36,23 @@ number: 1234
 marks: 77.7
 boolvalue: No # can be n, N, false, False, FALSE. 
 #same for true.
+
+#specity the type(optional)
+#int
+zero: !!int 0
+pozitiveNum: !!int 1234
+negativeNum: !!int -1234
+binaryNum: !!int 0b11001
+octalNum: !!int 01234
+hexa: !!int 0x45
+commaValue: !!int +123_000
+
+#floating point
+marks: !!float 77.7
+infinite: !!float .inf
+not a num: .nan
+
+#date and time
+date: !!timestamp 2004-09-12
 ...
 
