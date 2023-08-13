@@ -1,0 +1,16 @@
+{
+    "school":[
+        {
+            "name": "NHS",
+            "principle": "someone",
+            "students": [
+                {
+                    "rno": 2,
+                    "name": "aniket",
+                    "marks": 67
+                }
+            ]
+        }
+        
+    ]
+}

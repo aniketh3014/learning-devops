@@ -5,3 +5,74 @@ student: !!seq
 #or like this
 student: [marks, name, roll_no]
 
+#some of the keys of the seq will be empty
+#this is known as the sparse seq
+sparse swq:
+ - hey
+ - how
+ -
+ - Null
+ - sup
+
+#nested seq
+-
+ - mango
+ - banana
+ - apple
+-
+ - marks
+ - roll num
+ - date
+# key: value pairs are called maps
+!!map
+
+#nested mappings: map within an map
+name: aniket 
+role:
+ age: 18
+ job: student
+#same as 
+name: aniket
+role: {age: 18, job: student}
+
+#pairs: keys may have duplicate values
+#!!pairs
+
+example pair: !!pairs
+ - job: student
+ - job: teacher
+#this will be an array of hashtables
+#same as this
+example pair: !!pairs [job: student, job: teacher]
+# !!set will allow you to have uniqe values
+name: !!set
+ ? aniket
+ ? soumitra
+ ? raja
+# dictionary !!omap
+people: !!omap
+  - aniket:
+     name: aniket ghosh
+     age: 18
+  - soumitra:
+     name: saumitra pal
+     age: 19
+
+#reusing some properties using anchors
+linkings: &likes
+ fav fruit: mango
+ dislikes: bangan
+
+person1:
+ name: Aniket
+ <<: *likes
+
+person2:
+ name: Saumitra
+ <<: *likes
+ dislikes: muli #overwrite any properties like this 
+
+
+
+
+ 
