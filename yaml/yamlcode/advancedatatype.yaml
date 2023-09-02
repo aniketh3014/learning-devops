@@ -9,7 +9,7 @@ student: [marks, name, roll_no]
 #this is known as the sparse seq
 sparse swq:
  - hey
- - how
+ - howv
  -
  - Null
  - sup
